@@ -2,26 +2,25 @@
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto) 1fr;
+  place-items: start;
 }
 
 .titulo {
-  grid-column: 2;
-  text-align: right;
-}
-
-.preco {
-  place-self: start end;
-}
-
-.descricao {
-  text-align: right;
+  grid-column: 1 / -1;
+  text-align: center;
 }
 
 .comprar {
-  align-self: start;
-  text-align: center;
-  /* justify-self: center; */
+  grid-column: 2;
 }
+
+.foto {
+  grid-column: 1;
+  grid-row: 2 / 5;
+}
+
+/* grid-area: 2 / 2; Atalho para grid column e grid row. grid-area: (column) / (row) */
 
 /* Estilos gerais */
 
