@@ -28,6 +28,10 @@ h2 {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  height: 800px;
+  grid-template-columns: auto auto;
   gap: 20px;
+  /* justify-content: space-evenly; Alinha/Distribui o conteúdo na horizontal */
+  /* align-content: center; Alinha/Distribui o conteúdo na vertical */
+  place-content: center; /*Atalho para align e justify*/
 }
