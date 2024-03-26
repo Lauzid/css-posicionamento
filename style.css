@@ -2,8 +2,6 @@
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, auto) 1fr;
-  place-items: start;
 }
 
 .titulo {
@@ -11,13 +9,11 @@
   text-align: center;
 }
 
-.comprar {
-  grid-column: 2;
-}
-
-.foto {
-  grid-column: 1;
-  grid-row: 2 / 5;
+.info {
+  gap: 20px;
+  place-self: start;
+  display: grid;
+  place-items: start;
 }
 
 /* grid-area: 2 / 2; Atalho para grid column e grid row. grid-area: (column) / (row) */
